@@ -46,13 +46,13 @@ class SendMailNotification implements ShouldQueue
 
             // Email content
             $content = "<!DOCTYPE html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Новые обновления на вашем аккаунте</title></head><body>";
-            $content .= "<h1>Cargo Jolldas</h1>";
+            $content .= "<h1>Cargo365</h1>";
             $content .= "<h2>Новые поступления на склад</h2>";
             $content .= "<h3>Дата прибытия: ".date('Y-m-d')."<br>Время прибытия: ".date('G:i')."</h3>";
-            $content .= "<p><a href='https://jolldas.kz/'>www.jolldas.kz</a></p>";
+            $content .= "<p><a href='https://cargo365.kz/'>www.cargo365.kz</a></p>";
             $content .= "</body></html>";
 
-            $headers = "From: serv@jolldas.kz \r\n" .
+            $headers = "From: serv@cargo365.kz \r\n" .
                        "MIME-Version: 1.0" . "\r\n" . 
                        "Content-type: text/html; charset=UTF-8" . "\r\n";
 
